@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Local Food Indo</string>
+    <string name="question">What whould you like to eat?</string>
+    <string name="foodName">FoodName</string>
+    <string name="description">Membuat Menu Serbaguna</string>
+    <string name="itemImage">itemImage</string>
+</resources>

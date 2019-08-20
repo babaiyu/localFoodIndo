@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+        android:id="@+id/myHeader"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ToolbarFont"/>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+              <!--android:id="@+id/header"-->
+              <!--android:orientation="vertical"-->
+              <!--android:layout_width="match_parent"-->
+              <!--android:layout_height="wrap_content"-->
+              <!--android:background="@color/colorPrimary">-->
+
+    <!--<TextView-->
+            <!--android:id="@+id/headerTitle"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/quicksand_bold"-->
+            <!--android:text="@string/question"-->
+            <!--android:layout_margin="@dimen/margin_all"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:layout_gravity="center_vertical"/>-->
+<!--</LinearLayout>-->
