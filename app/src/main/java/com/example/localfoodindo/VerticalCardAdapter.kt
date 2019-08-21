@@ -4,7 +4,6 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.RelativeLayout
 import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -40,7 +39,6 @@ class VerticalCardAdapter(private val listFood: ArrayList<Food>) :
         var img: CircleImageView = itemView.findViewById(R.id.verticalImage)
         var foodName: TextView = itemView.findViewById(R.id.food_name)
         var foodDescription: TextView = itemView.findViewById(R.id.food_description)
-        var navigateCard: RelativeLayout = itemView.findViewById(R.id.itemFood)
 
         init {
             itemView.setOnClickListener {

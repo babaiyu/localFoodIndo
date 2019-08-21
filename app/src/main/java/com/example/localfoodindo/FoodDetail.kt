@@ -2,6 +2,7 @@ package com.example.localfoodindo
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.ActionBar
 import android.widget.TextView
 
 class FoodDetail : AppCompatActivity() {
@@ -18,6 +19,16 @@ class FoodDetail : AppCompatActivity() {
 
         titleDataReceive.text = title
         descriptionDataReceive.text = description
+
+        //Set Action Bar
+        setActionBarTitle(title)
+    }
+
+    //Set Action Bar
+    private fun setActionBarTitle(titleBar: String) {
+        if (supportActionBar != null) {
+            (supportActionBar as ActionBar).title = titleBar
+        }
     }
 
     companion object {
