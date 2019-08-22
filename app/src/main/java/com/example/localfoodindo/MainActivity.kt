@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             navigate.putExtra(FoodDetail.title_food, item.name)
             navigate.putExtra(FoodDetail.description_food, item.description)
             navigate.putExtra(FoodDetail.image_food, item.image)
+            navigate.putExtra(FoodDetail.price_food, item.price)
             startActivity(navigate)
         }
     }

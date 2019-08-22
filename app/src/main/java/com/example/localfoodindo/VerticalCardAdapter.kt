@@ -24,7 +24,7 @@ class VerticalCardAdapter(private val listFood: ArrayList<Food>) :
     }
 
     override fun onBindViewHolder(p0: VerticalCardHolder, p1: Int) {
-        val (title, description, image) = listFood[p1]
+        val (title, description, image, price) = listFood[p1]
 
         Glide.with(p0.itemView.context)
             .load(image)
@@ -33,12 +33,14 @@ class VerticalCardAdapter(private val listFood: ArrayList<Food>) :
 
         p0.foodName.text = title
         p0.foodDescription.text = description
+        p0.priceFood.text = "Rp. $price"
     }
 
     inner class VerticalCardHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var img: CircleImageView = itemView.findViewById(R.id.verticalImage)
         var foodName: TextView = itemView.findViewById(R.id.food_name)
         var foodDescription: TextView = itemView.findViewById(R.id.food_description)
+        var priceFood: TextView = itemView.findViewById(R.id.price_food)
 
         init {
             itemView.setOnClickListener {

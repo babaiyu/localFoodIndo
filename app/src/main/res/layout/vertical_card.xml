@@ -11,6 +11,7 @@
         android:background="@drawable/card_style_view"
         android:padding="@dimen/margin_all">
 
+    <!--    Image Circle Food-->
     <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/verticalImage"
             android:layout_width="90dp"
@@ -19,7 +20,9 @@
             android:contentDescription="@string/itemImage"
             android:foregroundGravity="center"
             tools:src="@color/colorPrimary" />
+    <!--    Image Circle Food-->
 
+    <!--    Detail Card beside the Image-->
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -27,15 +30,38 @@
             android:layout_toEndOf="@id/verticalImage"
             android:orientation="vertical">
 
-        <TextView
-                android:id="@+id/food_name"
-                style="@style/TextHeader"
-                tools:text="@string/foodName" />
+        <!--        Food Name & Price of Food-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
+            <TextView
+                    android:id="@+id/food_name"
+                    style="@style/TextHeader"
+                    android:layout_gravity="start"
+                    android:gravity="center"
+                    tools:text="@string/foodName" />
+
+            <TextView
+                    android:id="@+id/price_food"
+                    style="@style/TextBody"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="-40dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    tools:text="@string/price_food" />
+        </LinearLayout>
+        <!--        Food Name & Price of Food-->
+
+        <!--        Detail of Food-->
         <TextView
                 android:id="@+id/food_description"
                 style="@style/TextBody"
                 android:lines="3"
                 tools:text="@string/description" />
+        <!--        Detail of Food-->
+
     </LinearLayout>
+    <!--    Detail Card beside the Image-->
 </RelativeLayout>
