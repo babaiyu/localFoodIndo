@@ -4,4 +4,7 @@
     <string name="foodName">FoodName</string>
     <string name="description">Membuat Menu Serbaguna</string>
     <string name="itemImage">itemImage</string>
+    <string name="add_to_your_bag">Add to Your Bag</string>
+    <string name="details">Details</string>
+    <string name="price_food">Rp. 512K</string>
 </resources>

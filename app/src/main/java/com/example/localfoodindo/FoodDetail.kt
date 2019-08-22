@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBar
 import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.Request
 import com.bumptech.glide.request.RequestOptions
 import kotlinx.android.synthetic.main.food_detail.view.*
 
