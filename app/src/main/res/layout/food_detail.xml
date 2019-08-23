@@ -7,11 +7,22 @@
         android:layout_height="match_parent"
         tools:context=".FoodDetail">
 
+    <!--    Header-->
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbarDetail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <!--    Header-->
+
     <!--    Image Item Food-->
     <ImageView
             android:id="@+id/imageReceive"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="300dp"
             android:contentDescription="@string/itemImage"
             android:scaleType="fitXY" />
     <!--    Image Item Food-->
@@ -47,11 +58,11 @@
                     style="@style/TextBody"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/price_food"
-                    android:textColor="@color/colorPrimary"
                     android:layout_gravity="end"
+                    android:layout_marginTop="-40dp"
                     android:gravity="center"
-                    android:layout_marginTop="-40dp"/>
+                    android:text="@string/price_food"
+                    android:textColor="@color/colorPrimary" />
         </LinearLayout>
         <!--        Heading Title Section-->
 

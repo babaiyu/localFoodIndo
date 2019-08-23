@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--    "Account Info"-->
+    <item
+            android:id="@+id/accountInfo"
+            android:enabled="true"
+            android:icon="@drawable/account_icon"
+            android:title="@string/account"
+            android:visible="true"
+            app:showAsAction="always" />
+</menu>

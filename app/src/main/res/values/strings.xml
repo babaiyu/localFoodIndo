@@ -7,4 +7,8 @@
     <string name="add_to_your_bag">Add to Your Bag</string>
     <string name="details"><u>Details</u></string>
     <string name="price_food">Rp. 512K</string>
+    <string name="account">Account</string>
+    <string name="action_settings">Action Settings</string>
+    <string name="account_title">account_title</string>
+    <string name="account_email">account_email</string>
 </resources>

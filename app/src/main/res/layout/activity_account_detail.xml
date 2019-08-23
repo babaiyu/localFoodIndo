@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".AccountDetail">
+    <!--    Header-->
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbarAccount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <!--    Header-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgAccount"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_all"
+            android:foregroundGravity="center"
+            tools:src="@color/colorPrimary" />
+
+    <TextView
+            android:id="@+id/accountTitle"
+            style="@style/TextHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_all"
+            android:gravity="center"
+            android:text="@string/account_title" />
+
+    <TextView
+            android:id="@+id/accountEmail"
+            style="@style/TextDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_all"
+            android:gravity="center"
+            android:text="@string/account_email"
+            android:textColor="@color/colorSecondary" />
+
+</LinearLayout>

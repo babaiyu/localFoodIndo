@@ -14,6 +14,8 @@ class FoodDetail : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.food_detail)
+        setSupportActionBar(findViewById(R.id.my_toolbarDetail))
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
 
         val titleDataReceive: TextView = findViewById(R.id.titleReceive)
@@ -37,9 +39,16 @@ class FoodDetail : AppCompatActivity() {
         //Set Action Bar
         setActionBarTitle(title)
 
+
+        // Press to choose the Food
         pressFood.setOnClickListener {
             Toast.makeText(this, "Thank you for choosing $title", Toast.LENGTH_SHORT).show()
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return super.onSupportNavigateUp()
     }
 
     //Set Action Bar
