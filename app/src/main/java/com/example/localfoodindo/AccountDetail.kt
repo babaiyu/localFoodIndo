@@ -1,5 +1,8 @@
 package com.example.localfoodindo
 
+import android.accounts.Account
+import android.content.Intent
+import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.app.ActionBar
@@ -37,7 +40,21 @@ class AccountDetail : AppCompatActivity() {
         emailProfile.text = myEmail // Email Data
 
         emailProfile.setOnClickListener() {
-            Toast.makeText(this, "My Email is $myEmail", Toast.LENGTH_SHORT).show()
+            val openEmail = Intent(Intent.ACTION_SENDTO).apply {
+                data = Uri.parse("mailto:$myEmail")
+                putExtra(Intent.EXTRA_EMAIL, myEmail)
+                putExtra(Intent.EXTRA_SUBJECT, "Hi Dicoding")
+                putExtra(
+                    Intent.EXTRA_TEXT,
+                    """My name is $myName, i am so happy to learn Android Programming at Dicoding.
+                        |I Hope to finish this course and continue to Expert Course.
+                        |
+                        |Please comment my first Android App by reply this email. Thank you Dicoding""".trimMargin()
+                )
+            }
+            if (intent.resolveActivity(packageManager) != null) {
+                startActivity(openEmail)
+            }
         }
     }
 
